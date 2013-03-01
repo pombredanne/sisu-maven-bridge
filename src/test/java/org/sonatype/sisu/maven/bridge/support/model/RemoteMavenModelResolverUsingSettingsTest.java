@@ -11,12 +11,14 @@
  */
 package org.sonatype.sisu.maven.bridge.support.model;
 
+import static io.tesla.maven.bridge.support.ModelBuildingRequestBuilder.model;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.notNullValue;
-import static org.sonatype.sisu.maven.bridge.support.ModelBuildingRequestBuilder.model;
+import io.tesla.maven.bridge.MavenModelResolver;
+import io.tesla.maven.bridge.support.model.RemoteMavenModelResolverUsingSettings;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -25,7 +27,6 @@ import org.apache.maven.model.Model;
 import org.apache.maven.model.building.ModelBuildingException;
 import org.junit.Test;
 import org.sonatype.guice.bean.containers.InjectedTest;
-import org.sonatype.sisu.maven.bridge.MavenModelResolver;
 
 /**
  * {@link RemoteMavenModelResolverUsingSettings} related UTs.

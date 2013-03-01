@@ -14,13 +14,13 @@ package org.sonatype.sisu.maven.bridge.support.model;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
+import io.tesla.maven.bridge.MavenDependencyTreeResolver;
+import io.tesla.maven.bridge.support.dependency.RemoteMavenDependencyTreeResolverUsingSettings;
 
 import javax.inject.Inject;
 
 import org.junit.Test;
 import org.sonatype.guice.bean.containers.InjectedTest;
-import org.sonatype.sisu.maven.bridge.MavenDependencyTreeResolver;
-import org.sonatype.sisu.maven.bridge.support.dependency.RemoteMavenDependencyTreeResolverUsingSettings;
 
 import com.google.inject.Binder;
 
